@@ -19,7 +19,6 @@ export class AppComponent {
     let timeDiff = Math.abs(Date.now() - bdate.getTime());
     let age = Math.floor(timeDiff / (1000 * 3600 * 24) / 365.25);
 
-    alert('DBO : ' + userDOB + ' age : ' + age);
     if (age < 21) {
       this.userDOBAge = 'User is younger than 21 years old';
     }
